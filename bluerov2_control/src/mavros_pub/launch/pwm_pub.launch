@@ -3,7 +3,7 @@
     <!-- PWM信号发布节点 - 将MPC力/力矩命令转换为RC PWM信号 -->
     
     <!-- 参数配置 -->
-    <arg name="force_topic" default="/bluerov2/cmd_vel" doc="MPC力/力矩命令话题"/>
+    <arg name="force_topic" default="/bluerov2/cmd_vel" />
     
     <!-- 最大推力/力矩参数 (用于归一化) -->
     <arg name="max_force_x" default="10.0" doc="X-axis max force (N)"/>

@@ -105,7 +105,7 @@ def main():
     force_sub = rospy.Subscriber(force_topic, Twist, force_callback, queue_size=10)
     
     # 等待ROS数据
-    rospy.loginfo("等待MPC力/力矩命令数据...")
+    rospy.loginfo("wait for force data...") 
     while not rospy.is_shutdown() and not force_ready:
         rospy.sleep(0.1)
         

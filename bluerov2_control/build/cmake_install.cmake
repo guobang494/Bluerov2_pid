@@ -152,7 +152,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zeb/bluerov2_pid/bluerov2_control/build/gtest/cmake_install.cmake")
   include("/home/zeb/bluerov2_pid/bluerov2_control/build/mavros_pub/cmake_install.cmake")
-  include("/home/zeb/bluerov2_pid/bluerov2_control/build/pid_control/cmake_install.cmake")
 
 endif()
 
