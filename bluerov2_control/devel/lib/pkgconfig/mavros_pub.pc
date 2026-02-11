@@ -1,0 +1,8 @@
+prefix=/home/zeb/bluerov2_pid/bluerov2_control/devel
+
+Name: mavros_pub
+Description: Description of mavros_pub
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

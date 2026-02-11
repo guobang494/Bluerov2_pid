@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- 启动 MAVROS -->
+    <include file="$(find mavros_pub)/launch/mavros.launch"/>
+    
+    <!-- 启动 PWM 发布节点 -->
+    <include file="$(find mavros_pub)/launch/pwm_pub.launch"/>
+</launch>

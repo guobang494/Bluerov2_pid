@@ -1,0 +1,25 @@
+<launch>
+  <arg name="server_address" default="198.168.8.189"/>
+  <arg name="server_base_port"     default="33333"/>
+
+  <node pkg="ros-qualisys" type="ros-qualisys" name="qualisys" output="screen">
+    <param name="server_address" value="$(arg server_address)"/>
+    <param name="server_base_port" value="$(arg server_base_port)"/>
+
+ </node> 
+
+
+  <!-- <arg name="target_frame" default="mocap" />
+  <arg name="reference_frame" default="mocap" />
+  <arg name="publish_rate" default="20.0" />
+  <arg name="pose_topic" default="/pose_gt_real" />
+  <arg name="enable_pose_gt" default="true" />
+  
+  
+  <node pkg="ros-qualisys" type="tf2_pose_gt_real.py" name="tf2_pose_gt_real" output="screen" if="$(arg enable_pose_gt)">
+    <param name="target_frame" value="$(arg target_frame)"/>
+    <param name="reference_frame" value="$(arg reference_frame)"/>
+    <param name="publish_rate" value="$(arg publish_rate)"/>
+    <param name="pose_topic" value="$(arg pose_topic)"/> 
+   </node>  --> 
+</launch>

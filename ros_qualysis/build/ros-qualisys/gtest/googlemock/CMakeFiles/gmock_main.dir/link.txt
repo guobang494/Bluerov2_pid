@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -pedantic -Wno-long-long -Wall -Wextra -Wcast-align -Wcast-qual -Wformat -Wwrite-strings -Wconversion  -O3 -DNDEBUG -shared -Wl,-soname,libgmock_main.so -o ../lib/libgmock_main.so CMakeFiles/gmock_main.dir/src/gmock_main.cc.o  -Wl,-rpath,/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/gtest/lib ../lib/libgmock.so ../lib/libgtest.so -lpthread 

@@ -1,0 +1,6 @@
+Invoking command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys': /usr/local/bin/cmake /home/zeb/bluerov2_pid/ros_qualysis/src -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys
+Invoked command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys' returned '0': /usr/local/bin/cmake /home/zeb/bluerov2_pid/ros_qualysis/src -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys
+Invoking command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys': /usr/local/bin/cmake --build /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys -- -j22 -l22
+Invoked command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys' returned '0': /usr/local/bin/cmake --build /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys -- -j22 -l22
+Invoking command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys': /usr/local/bin/cmake --install /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys
+Invoked command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys' returned '0': /usr/local/bin/cmake --install /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys

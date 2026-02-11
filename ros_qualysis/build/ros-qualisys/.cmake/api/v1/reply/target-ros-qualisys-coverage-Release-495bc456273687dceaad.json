@@ -1,0 +1,89 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_SETUP_COVERAGE_FINALIZE",
+			"SETUP_PROJECT_FINALIZE",
+			"SETUP_PROJECT_FINALIZE_HOOK"
+		],
+		"files" : 
+		[
+			"/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/_deps/jrl-cmakemodules-src/coverage.cmake",
+			"/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/_deps/jrl-cmakemodules-src/base.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 266,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 360,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 3
+			}
+		]
+	},
+	"id" : "ros-qualisys-coverage::@6890427a1f51a3e7e1df",
+	"name" : "ros-qualisys-coverage",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/ros-qualisys-coverage",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/ros-qualisys-coverage.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

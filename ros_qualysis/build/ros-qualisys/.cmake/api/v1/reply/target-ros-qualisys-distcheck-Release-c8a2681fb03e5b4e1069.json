@@ -1,0 +1,100 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"DISTCHECK_SETUP",
+			"project",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/_deps/jrl-cmakemodules-src/distcheck.cmake",
+			"/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/_deps/jrl-cmakemodules-src/post-project.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 77,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 161,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "ros-qualisys-distdir::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ros-qualisys-distcheck::@6890427a1f51a3e7e1df",
+	"name" : "ros-qualisys-distcheck",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/ros-qualisys-distcheck",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/ros-qualisys-distcheck.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

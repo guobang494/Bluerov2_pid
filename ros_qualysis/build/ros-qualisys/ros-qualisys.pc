@@ -1,0 +1,22 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${pcfiledir}/../..
+libdir=${pcfiledir}/../../lib
+bindir=${pcfiledir}/../../bin
+pkglibdir=${pcfiledir}/../../lib/ros-qualisys
+includedir=${pcfiledir}/../../include
+datarootdir=${pcfiledir}/../../share
+pkgdatarootdir=${pcfiledir}/../../share
+docdir=${pcfiledir}/../../share/doc/ros-qualisys
+doxygendocdir=${pcfiledir}/../../share/doc/ros-qualisys/doxygen-html
+
+Name: ros-qualisys
+Description: ROS wrapper around the https://github.com/qualisys/qualisys_cpp_sdk package. See README.md.
+URL: https://github.com/gepetto/ros-qualisys
+Version: 1.0.0
+Requires: 
+Conflicts: 
+Libs: -L${libdir} 
+Libs.private: 
+Cflags:  -I${includedir}
+
+

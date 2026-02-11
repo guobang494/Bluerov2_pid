@@ -1,0 +1,8 @@
+ros_qualisys:
+  server_address: "172.20.10.3"
+  server_base_port: 33333
+  server_udp_port: 6734
+  major_version: 1
+  minor_version: 20
+  frame_rate: 100
+  fixed_frame_id: "mocap"

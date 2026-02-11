@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- BlueROV2 MAVROS 启动文件 -->
+    
+    <arg name="fcu_url" default="udp://0.0.0.0:14550@192.168.2.2:14555"/>
+    <arg name="gcs_url" default=""/>
+    <arg name="target_system_id" default="1"/>
+    <arg name="target_component_id" default="1"/>
+    <arg name="pluginlists_yaml" default="$(find mavros)/launch/apm_pluginlists.yaml"/>
+    <arg name="config_yaml" default="$(find mavros)/launch/apm_config.yaml"/>
+    
+    <!-- 启动 MAVROS 节点 -->
+    <node name="mavros" pkg="mavros" type="mavros_node" output="screen" required="true">
+        <param name="fcu_url" value="$(arg fcu_url)"/>
+        <param name="gcs_url" value="$(arg gcs_url)"/>
+        <param name="target_system_id" value="$(arg target_system_id)"/>
+        <param name="target_component_id" value="$(arg target_component_id)"/>
+        
+        <!-- 加载插件列表和配置 -->
+        <rosparam command="load" file="$(arg pluginlists_yaml)"/>
+        <rosparam command="load" file="$(arg config_yaml)"/>
+    </node>
+    
+</launch>

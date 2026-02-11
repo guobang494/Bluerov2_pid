@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/devel/setup.sh
