@@ -172,216 +172,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 mavros_pub/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule:
 	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
 .PHONY : mavros_pub/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
@@ -731,6 +521,82 @@ sensor_msgs_generate_messages_py/fast:
 	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+mavros_pub/CMakeFiles/mavros_pub_node.dir/rule:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/mavros_pub_node.dir/rule
+.PHONY : mavros_pub/CMakeFiles/mavros_pub_node.dir/rule
+
+# Convenience name for target.
+mavros_pub_node: mavros_pub/CMakeFiles/mavros_pub_node.dir/rule
+.PHONY : mavros_pub_node
+
+# fast build rule for target.
+mavros_pub_node/fast:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/mavros_pub_node.dir/build.make mavros_pub/CMakeFiles/mavros_pub_node.dir/build
+.PHONY : mavros_pub_node/fast
+
+# Convenience name for target.
+mavros_pub/CMakeFiles/example_node.dir/rule:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/example_node.dir/rule
+.PHONY : mavros_pub/CMakeFiles/example_node.dir/rule
+
+# Convenience name for target.
+example_node: mavros_pub/CMakeFiles/example_node.dir/rule
+.PHONY : example_node
+
+# fast build rule for target.
+example_node/fast:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/example_node.dir/build.make mavros_pub/CMakeFiles/example_node.dir/build
+.PHONY : example_node/fast
+
+src/example_node.o: src/example_node.cpp.o
+.PHONY : src/example_node.o
+
+# target to build an object file
+src/example_node.cpp.o:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/example_node.dir/build.make mavros_pub/CMakeFiles/example_node.dir/src/example_node.cpp.o
+.PHONY : src/example_node.cpp.o
+
+src/example_node.i: src/example_node.cpp.i
+.PHONY : src/example_node.i
+
+# target to preprocess a source file
+src/example_node.cpp.i:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/example_node.dir/build.make mavros_pub/CMakeFiles/example_node.dir/src/example_node.cpp.i
+.PHONY : src/example_node.cpp.i
+
+src/example_node.s: src/example_node.cpp.s
+.PHONY : src/example_node.s
+
+# target to generate assembly for a file
+src/example_node.cpp.s:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/example_node.dir/build.make mavros_pub/CMakeFiles/example_node.dir/src/example_node.cpp.s
+.PHONY : src/example_node.cpp.s
+
+src/mavros_pub_node.o: src/mavros_pub_node.cpp.o
+.PHONY : src/mavros_pub_node.o
+
+# target to build an object file
+src/mavros_pub_node.cpp.o:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/mavros_pub_node.dir/build.make mavros_pub/CMakeFiles/mavros_pub_node.dir/src/mavros_pub_node.cpp.o
+.PHONY : src/mavros_pub_node.cpp.o
+
+src/mavros_pub_node.i: src/mavros_pub_node.cpp.i
+.PHONY : src/mavros_pub_node.i
+
+# target to preprocess a source file
+src/mavros_pub_node.cpp.i:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/mavros_pub_node.dir/build.make mavros_pub/CMakeFiles/mavros_pub_node.dir/src/mavros_pub_node.cpp.i
+.PHONY : src/mavros_pub_node.cpp.i
+
+src/mavros_pub_node.s: src/mavros_pub_node.cpp.s
+.PHONY : src/mavros_pub_node.s
+
+# target to generate assembly for a file
+src/mavros_pub_node.cpp.s:
+	cd /home/zeb/bluerov2_pid/bluerov2_control/build && $(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/mavros_pub_node.dir/build.make mavros_pub/CMakeFiles/mavros_pub_node.dir/src/mavros_pub_node.cpp.s
+.PHONY : src/mavros_pub_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -759,31 +625,24 @@ help:
 	@echo "... mavros_msgs_generate_messages_lisp"
 	@echo "... mavros_msgs_generate_messages_nodejs"
 	@echo "... mavros_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... uuid_msgs_generate_messages_cpp"
 	@echo "... uuid_msgs_generate_messages_eus"
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... example_node"
+	@echo "... mavros_pub_node"
+	@echo "... src/example_node.o"
+	@echo "... src/example_node.i"
+	@echo "... src/example_node.s"
+	@echo "... src/mavros_pub_node.o"
+	@echo "... src/mavros_pub_node.i"
+	@echo "... src/mavros_pub_node.s"
 .PHONY : help
 
 

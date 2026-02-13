@@ -298,7 +298,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -311,7 +311,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -324,7 +324,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -337,7 +337,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -350,7 +350,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -363,7 +363,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -376,7 +376,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -389,7 +389,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -402,7 +402,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -415,7 +415,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -428,7 +428,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -441,7 +441,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -454,7 +454,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -467,7 +467,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -480,8 +480,34 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named bluerov2_motion_control_position_node
+
+# Build rule for target.
+bluerov2_motion_control_position_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control_position_node
+.PHONY : bluerov2_motion_control_position_node
+
+# fast build rule for target.
+bluerov2_motion_control_position_node/fast:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/build.make bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/build
+.PHONY : bluerov2_motion_control_position_node/fast
+
+#=============================================================================
+# Target rules for targets named bluerov2_motion_control_velocity_node
+
+# Build rule for target.
+bluerov2_motion_control_velocity_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control_velocity_node
+.PHONY : bluerov2_motion_control_velocity_node
+
+# fast build rule for target.
+bluerov2_motion_control_velocity_node/fast:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/build.make bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/build
+.PHONY : bluerov2_motion_control_velocity_node/fast
 
 #=============================================================================
 # Target rules for targets named mavros_msgs_generate_messages_cpp
@@ -808,6 +834,32 @@ sensor_msgs_generate_messages_py/fast:
 	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named mavros_pub_node
+
+# Build rule for target.
+mavros_pub_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub_node
+.PHONY : mavros_pub_node
+
+# fast build rule for target.
+mavros_pub_node/fast:
+	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/mavros_pub_node.dir/build.make mavros_pub/CMakeFiles/mavros_pub_node.dir/build
+.PHONY : mavros_pub_node/fast
+
+#=============================================================================
+# Target rules for targets named example_node
+
+# Build rule for target.
+example_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example_node
+.PHONY : example_node
+
+# fast build rule for target.
+example_node/fast:
+	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/example_node.dir/build.make mavros_pub/CMakeFiles/example_node.dir/build
+.PHONY : example_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -866,10 +918,14 @@ help:
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... bluerov2_motion_control_position_node"
+	@echo "... bluerov2_motion_control_velocity_node"
+	@echo "... example_node"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... mavros_pub_node"
 .PHONY : help
 
 

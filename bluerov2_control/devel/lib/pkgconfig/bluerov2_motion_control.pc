@@ -1,0 +1,8 @@
+prefix=/home/zeb/bluerov2_pid/bluerov2_control/devel
+
+Name: bluerov2_motion_control
+Description: Description of bluerov2_motion_control
+Version: 0.0.0
+Cflags: -I/home/zeb/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs

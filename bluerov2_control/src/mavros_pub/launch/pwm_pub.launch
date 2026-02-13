@@ -1,23 +1,29 @@
 <?xml version="1.0"?>
 <launch>
-    <!-- PWM信号发布节点 - 将MPC力/力矩命令转换为RC PWM信号 -->
-    
-    <!-- 参数配置 -->
-    <arg name="force_topic" default="/bluerov2/cmd_vel" />
-    
+    <!-- PWM信号发布节点 - 订阅 bluerov2_motion_control 速度环输出，转换为 RC PWM 信号 -->
+
+    <!-- 话题配置 — 对接 bluerov2_motion_control velocity_node 输出 -->
+    <arg name="topic_fx" default="/bluerov2_heavy/cmd_velocity/linear/x" />
+    <arg name="topic_fy" default="/bluerov2_heavy/cmd_velocity/linear/y" />
+    <arg name="topic_fz" default="/bluerov2_heavy/cmd_velocity/linear/z" />
+    <arg name="topic_mz" default="/bluerov2_heavy/cmd_velocity/angular/z" />
+
     <!-- 最大推力/力矩参数 (用于归一化) -->
-    <arg name="max_force_x" default="10.0" doc="X-axis max force (N)"/>
-    <arg name="max_force_y" default="10.0" doc="Y-axis max force (N)"/>
-    <arg name="max_force_z" default="0.0" doc="Z-axis max force (N)"/>
-    <arg name="max_torque_z" default="1.0" doc="yaw max torque (N*m)"/>
-    
+    <arg name="max_force_x"  default="10.0" doc="X-axis max force (N)"/>
+    <arg name="max_force_y"  default="10.0" doc="Y-axis max force (N)"/>
+    <arg name="max_force_z"  default="0.0"  doc="Z-axis max force (N), 0 means no Z control"/>
+    <arg name="max_torque_z" default="1.0"  doc="Yaw max torque (N*m), 匹配速度环 PID_u4 饱和值"/>
+
     <!-- 启动PWM信号发布节点 -->
     <node name="force_to_rc_override" pkg="mavros_pub" type="pub_signal.py" output="screen">
-        <param name="force_topic" value="$(arg force_topic)"/>
-        <param name="max_force_x" value="$(arg max_force_x)"/>
-        <param name="max_force_y" value="$(arg max_force_y)"/>
-        <param name="max_force_z" value="$(arg max_force_z)"/>
+        <param name="topic_fx"     value="$(arg topic_fx)"/>
+        <param name="topic_fy"     value="$(arg topic_fy)"/>
+        <param name="topic_fz"     value="$(arg topic_fz)"/>
+        <param name="topic_mz"     value="$(arg topic_mz)"/>
+        <param name="max_force_x"  value="$(arg max_force_x)"/>
+        <param name="max_force_y"  value="$(arg max_force_y)"/>
+        <param name="max_force_z"  value="$(arg max_force_z)"/>
         <param name="max_torque_z" value="$(arg max_torque_z)"/>
     </node>
-    
+
 </launch>

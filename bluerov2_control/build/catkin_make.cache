@@ -1,2 +1,2 @@
-mavros_pub
+bluerov2_motion_control:mavros_pub
 -DCATKIN_DEVEL_PREFIX=/home/zeb/bluerov2_pid/bluerov2_control/devel -DCMAKE_INSTALL_PREFIX=/home/zeb/bluerov2_pid/bluerov2_control/install -G Unix Makefiles

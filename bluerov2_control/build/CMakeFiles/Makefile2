@@ -64,11 +64,13 @@ CMAKE_BINARY_DIR = /home/zeb/bluerov2_pid/bluerov2_control/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: bluerov2_motion_control/all
 all: mavros_pub/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: bluerov2_motion_control/preinstall
 preinstall: mavros_pub/preinstall
 .PHONY : preinstall
 
@@ -79,8 +81,41 @@ clean: CMakeFiles/run_tests.dir/clean
 clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/doxygen.dir/clean
 clean: gtest/clean
+clean: bluerov2_motion_control/clean
 clean: mavros_pub/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory bluerov2_motion_control
+
+# Recursive "all" directory target.
+bluerov2_motion_control/all: bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all
+bluerov2_motion_control/all: bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all
+.PHONY : bluerov2_motion_control/all
+
+# Recursive "preinstall" directory target.
+bluerov2_motion_control/preinstall:
+.PHONY : bluerov2_motion_control/preinstall
+
+# Recursive "clean" directory target.
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/clean
+bluerov2_motion_control/clean: bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/clean
+.PHONY : bluerov2_motion_control/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -134,7 +169,8 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory mavros_pub
 
 # Recursive "all" directory target.
-mavros_pub/all:
+mavros_pub/all: mavros_pub/CMakeFiles/mavros_pub_node.dir/all
+mavros_pub/all: mavros_pub/CMakeFiles/example_node.dir/all
 .PHONY : mavros_pub/all
 
 # Recursive "preinstall" directory target.
@@ -142,21 +178,6 @@ mavros_pub/preinstall:
 .PHONY : mavros_pub/preinstall
 
 # Recursive "clean" directory target.
-mavros_pub/clean: mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-mavros_pub/clean: mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 mavros_pub/clean: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/clean
 mavros_pub/clean: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_eus.dir/clean
 mavros_pub/clean: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/clean
@@ -182,6 +203,8 @@ mavros_pub/clean: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_eus.dir/cl
 mavros_pub/clean: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 mavros_pub/clean: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 mavros_pub/clean: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+mavros_pub/clean: mavros_pub/CMakeFiles/mavros_pub_node.dir/clean
+mavros_pub/clean: mavros_pub/CMakeFiles/example_node.dir/clean
 .PHONY : mavros_pub/clean
 
 #=============================================================================
@@ -321,7 +344,7 @@ CMakeFiles/doxygen.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=7,8 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -348,7 +371,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=9,10 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -374,7 +397,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=11,12 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -400,7 +423,7 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=13,14 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -420,394 +443,474 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/build
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_eus: mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+roscpp_generate_messages_eus: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : roscpp_generate_messages_eus
 
 # clean rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+roscpp_generate_messages_nodejs: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : roscpp_generate_messages_nodejs
 
 # clean rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/build
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/rule
+roscpp_generate_messages_py: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : mavros_pub/CMakeFiles/roscpp_generate_messages_py.dir/clean
+bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_eus: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+rosgraph_msgs_generate_messages_eus: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_eus
 
 # clean rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_nodejs: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # clean rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : mavros_pub/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+std_msgs_generate_messages_cpp: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : std_msgs_generate_messages_cpp
 
 # clean rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_eus: mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+std_msgs_generate_messages_eus: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : std_msgs_generate_messages_eus
 
 # clean rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_lisp: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : std_msgs_generate_messages_lisp
 
 # clean rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+std_msgs_generate_messages_nodejs: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : std_msgs_generate_messages_nodejs
 
 # clean rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/build
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/all
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_py: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : mavros_pub/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/build.make bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir
+
+# All Build rule for target.
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/build.make bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/build.make bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=1,2 "Built target bluerov2_motion_control_position_node"
+.PHONY : bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all
+
+# Build rule for subdir invocation for target.
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
+.PHONY : bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/rule
+
+# Convenience name for target.
+bluerov2_motion_control_position_node: bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/rule
+.PHONY : bluerov2_motion_control_position_node
+
+# clean rule for target.
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/build.make bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_position_node.dir/clean
+
+#=============================================================================
+# Target rules for target bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir
+
+# All Build rule for target.
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/build.make bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/build.make bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=3,4 "Built target bluerov2_motion_control_velocity_node"
+.PHONY : bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all
+
+# Build rule for subdir invocation for target.
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
+.PHONY : bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/rule
+
+# Convenience name for target.
+bluerov2_motion_control_velocity_node: bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/rule
+.PHONY : bluerov2_motion_control_velocity_node
+
+# clean rule for target.
+bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/build.make bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/clean
+.PHONY : bluerov2_motion_control/CMakeFiles/bluerov2_motion_control_velocity_node.dir/clean
 
 #=============================================================================
 # Target rules for target mavros_pub/CMakeFiles/mavros_msgs_generate_messages_cpp.dir
@@ -1458,6 +1561,136 @@ sensor_msgs_generate_messages_py: mavros_pub/CMakeFiles/sensor_msgs_generate_mes
 mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
 	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 .PHONY : mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target mavros_pub/CMakeFiles/mavros_pub_node.dir
+
+# All Build rule for target.
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/mavros_pub_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/mavros_pub_node.dir/build.make mavros_pub/CMakeFiles/mavros_pub_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/mavros_pub_node.dir/build.make mavros_pub/CMakeFiles/mavros_pub_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=15,16 "Built target mavros_pub_node"
+.PHONY : mavros_pub/CMakeFiles/mavros_pub_node.dir/all
+
+# Build rule for subdir invocation for target.
+mavros_pub/CMakeFiles/mavros_pub_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/mavros_pub_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
+.PHONY : mavros_pub/CMakeFiles/mavros_pub_node.dir/rule
+
+# Convenience name for target.
+mavros_pub_node: mavros_pub/CMakeFiles/mavros_pub_node.dir/rule
+.PHONY : mavros_pub_node
+
+# clean rule for target.
+mavros_pub/CMakeFiles/mavros_pub_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/mavros_pub_node.dir/build.make mavros_pub/CMakeFiles/mavros_pub_node.dir/clean
+.PHONY : mavros_pub/CMakeFiles/mavros_pub_node.dir/clean
+
+#=============================================================================
+# Target rules for target mavros_pub/CMakeFiles/example_node.dir
+
+# All Build rule for target.
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/roscpp_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: bluerov2_motion_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/mavros_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geographic_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/uuid_msgs_generate_messages_py.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+mavros_pub/CMakeFiles/example_node.dir/all: mavros_pub/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/example_node.dir/build.make mavros_pub/CMakeFiles/example_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/example_node.dir/build.make mavros_pub/CMakeFiles/example_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles --progress-num=5,6 "Built target example_node"
+.PHONY : mavros_pub/CMakeFiles/example_node.dir/all
+
+# Build rule for subdir invocation for target.
+mavros_pub/CMakeFiles/example_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros_pub/CMakeFiles/example_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zeb/bluerov2_pid/bluerov2_control/build/CMakeFiles 0
+.PHONY : mavros_pub/CMakeFiles/example_node.dir/rule
+
+# Convenience name for target.
+example_node: mavros_pub/CMakeFiles/example_node.dir/rule
+.PHONY : example_node
+
+# clean rule for target.
+mavros_pub/CMakeFiles/example_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f mavros_pub/CMakeFiles/example_node.dir/build.make mavros_pub/CMakeFiles/example_node.dir/clean
+.PHONY : mavros_pub/CMakeFiles/example_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
