@@ -12,7 +12,7 @@
     <arg name="max_force_x"  default="10.0" doc="X-axis max force (N)"/>
     <arg name="max_force_y"  default="10.0" doc="Y-axis max force (N)"/>
     <arg name="max_force_z"  default="0.0"  doc="Z-axis max force (N), 0 means no Z control"/>
-    <arg name="max_torque_z" default="1.0"  doc="Yaw max torque (N*m), 匹配速度环 PID_u4 饱和值"/>
+    <arg name="max_torque_z" default="12.0"  doc="Yaw max torque (N*m), 匹配速度环 PID_u4 饱和值"/>
 
     <!-- 启动PWM信号发布节点 -->
     <node name="force_to_rc_override" pkg="mavros_pub" type="pub_signal.py" output="screen">

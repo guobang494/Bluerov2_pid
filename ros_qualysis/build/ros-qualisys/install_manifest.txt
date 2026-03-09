@@ -19,6 +19,7 @@
 /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/config/bauzil-qualisys.yaml
 /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/launch/qualisys_bauzil_bringup.launch
 /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/scripts/tf2_pose_gt_real.py
+/home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/ros-qualisys/tf2_pose_gt_real.py
 /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/pkgconfig/ros-qualisys.pc
 /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/include/ros-qualisys/qualisys-to-ros.hpp
 /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ament_index/resource_index/packages/ros-qualisys

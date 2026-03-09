@@ -1,0 +1,36 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(bluerov2_motion_control)
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  std_msgs
+)
+
+catkin_package(
+  INCLUDE_DIRS include
+  CATKIN_DEPENDS roscpp std_msgs
+)
+
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+)
+
+
+add_executable(bluerov2_motion_control_position_node src/bluerov2_motion_control_position_node.cpp)
+target_link_libraries(bluerov2_motion_control_position_node ${catkin_LIBRARIES})
+
+add_executable(bluerov2_motion_control_velocity_node src/bluerov2_motion_control_velocity_node.cpp)
+target_link_libraries(bluerov2_motion_control_velocity_node ${catkin_LIBRARIES})
+
+install(TARGETS bluerov2_motion_control_position_node bluerov2_motion_control_velocity_node
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+)
+
+install(DIRECTORY launch configs
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)

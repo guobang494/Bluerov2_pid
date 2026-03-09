@@ -25,6 +25,7 @@ function _colcon_prefix_chain_powershell_source_script {
 _colcon_prefix_chain_powershell_source_script "/opt/ros/noetic\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/zeb/ros_workspace/install/ros-qualisys\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/zeb/ws_moveit/devel\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/zeb/bluerov2_pid/bluerov2_control/devel\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/zeb/ros_workspace/install\local_setup.ps1"
 
 # source this prefix

@@ -71,7 +71,7 @@ include CMakeFiles/ros-qualisys-release_pixi_toml_version.dir/progress.make
 
 CMakeFiles/ros-qualisys-release_pixi_toml_version:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Update pixi.toml for ros-qualisys"
-	cd /home/zeb/bluerov2_pid/ros_qualysis/src && /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/_deps/jrl-cmakemodules-src/pixi.py $$VERSION && if ! ( git diff --quiet pixi.toml ) then ( /usr/bin/git add pixi.toml && /usr/bin/git commit -m release:\ Update\ pixi.toml\ version\ to\ $$VERSION && echo Updated\ pixi.toml\ and\ committed ) fi
+	cd /home/zeb/bluerov2_pid/ros_qualysis/src && /usr/bin/python3 /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/_deps/jrl-cmakemodules-src/pixi.py $$VERSION && if ! ( git diff --quiet pixi.toml ) then ( /usr/bin/git add pixi.toml && /usr/bin/git commit -m release:\ Update\ pixi.toml\ version\ to\ $$VERSION && echo Updated\ pixi.toml\ and\ committed ) fi
 
 ros-qualisys-release_pixi_toml_version: CMakeFiles/ros-qualisys-release_pixi_toml_version
 ros-qualisys-release_pixi_toml_version: CMakeFiles/ros-qualisys-release_pixi_toml_version.dir/build.make

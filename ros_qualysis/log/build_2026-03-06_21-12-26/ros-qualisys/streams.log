@@ -1,0 +1,163 @@
+[0.008s] Invoking command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys': /usr/local/bin/cmake /home/zeb/bluerov2_pid/ros_qualysis/src -DCMAKE_INSTALL_PREFIX=/home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys
+[2.305s] -- The CXX compiler identification is GNU 9.4.0
+[2.316s] -- Detecting CXX compiler ABI info
+[2.384s] -- Detecting CXX compiler ABI info - done
+[2.398s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.398s] -- Detecting CXX compile features
+[2.399s] -- Detecting CXX compile features - done
+[2.405s] -- Configuring "ros-qualisys" (https://github.com/gepetto/ros-qualisys)
+[2.405s] -- Package version (ROS package.xml): 1.0.0
+[2.415s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[2.444s] -- Performing Test res_-pedantic
+[2.511s] -- Performing Test res_-pedantic - Success
+[2.512s] -- Performing Test res_-Wno-long-long
+[2.575s] -- Performing Test res_-Wno-long-long - Success
+[2.576s] -- Performing Test res_-Wall
+[2.644s] -- Performing Test res_-Wall - Success
+[2.645s] -- Performing Test res_-Wextra
+[2.710s] -- Performing Test res_-Wextra - Success
+[2.711s] -- Performing Test res_-Wcast-align
+[2.765s] -- Performing Test res_-Wcast-align - Success
+[2.766s] -- Performing Test res_-Wcast-qual
+[2.837s] -- Performing Test res_-Wcast-qual - Success
+[2.838s] -- Performing Test res_-Wformat
+[2.901s] -- Performing Test res_-Wformat - Success
+[2.901s] -- Performing Test res_-Wwrite-strings
+[2.963s] -- Performing Test res_-Wwrite-strings - Success
+[2.963s] -- Performing Test res_-Wconversion
+[3.025s] -- Performing Test res_-Wconversion - Success
+[3.026s] -- Performing Test res_-Werror
+[3.058s] -- Performing Test res_-Werror - Failed
+[3.066s] -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+[3.067s] -- Failed to find Doxygen, documentation will not be generated.
+[3.114s] -- The C compiler identification is GNU 9.4.0
+[3.122s] -- Detecting C compiler ABI info
+[3.180s] -- Detecting C compiler ABI info - done
+[3.189s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.189s] -- Detecting C compile features
+[3.189s] -- Detecting C compile features - done
+[3.219s] -- Using CATKIN_DEVEL_PREFIX: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/devel
+[3.219s] -- Using CMAKE_PREFIX_PATH: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys;/home/zeb/bluerov2_pid/bluerov2_control/devel;/home/zeb/ws_moveit/devel;/home/zeb/ros_workspace/install/ros-qualisys;/opt/ros/noetic
+[3.219s] -- This workspace overlays: /home/zeb/bluerov2_pid/bluerov2_control/devel;/home/zeb/ws_moveit/devel;/home/zeb/ros_workspace/install/ros-qualisys;/opt/ros/noetic
+[3.251s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.251s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.251s] -- Using Debian Python package layout
+[3.274s] -- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+[3.275s] -- Using empy: /usr/lib/python3/dist-packages/em.py
+[3.366s] -- Using CATKIN_ENABLE_TESTING: ON
+[3.366s] -- Call enable_testing()
+[3.366s] -- Using CATKIN_TEST_RESULTS_DIR: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/test_results
+[3.565s] -- Forcing gtest/gmock from source, though one was otherwise available.
+[3.565s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[3.566s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[3.566s] [0mCMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+[3.566s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[3.566s]   CMake.
+[3.566s] 
+[3.567s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[3.567s]   CMake that the project does not need compatibility with older versions.
+[3.567s] 
+[3.567s] [0m
+[3.569s] [0mCMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+[3.569s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[3.569s]   CMake.
+[3.569s] 
+[3.569s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[3.569s]   CMake that the project does not need compatibility with older versions.
+[3.569s] 
+[3.569s] [0m
+[3.569s] [0mCMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+[3.569s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[3.570s]   CMake.
+[3.570s] 
+[3.570s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[3.570s]   CMake that the project does not need compatibility with older versions.
+[3.570s] 
+[3.570s] [0m
+[3.607s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[3.610s] -- Found Threads: TRUE  
+[3.615s] -- Using Python nosetests: /usr/bin/nosetests3
+[3.654s] -- catkin 0.8.12
+[3.654s] -- BUILD_SHARED_LIBS is on
+[3.870s] -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[3.892s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: unit_test_framework 
+[3.893s] -- Create files for AMENT (ROS 2)
+[3.894s] -- Configuring done (3.9s)
+[3.920s] -- Generating done (0.0s)
+[3.931s] -- Build files have been written to: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys
+[3.936s] Invoked command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys' returned '0': /usr/local/bin/cmake /home/zeb/bluerov2_pid/ros_qualysis/src -DCMAKE_INSTALL_PREFIX=/home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys
+[3.940s] Invoking command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys': /usr/local/bin/cmake --build /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys -- -j22 -l22
+[3.944s] /opt/cmake-3.26.4-linux-x86_64/bin/cmake -S/home/zeb/bluerov2_pid/ros_qualysis/src -B/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys --check-build-system CMakeFiles/Makefile.cmake 0
+[3.948s] /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_progress_start /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys//CMakeFiles/progress.marks
+[3.950s] /usr/bin/make  -f CMakeFiles/Makefile2 all
+[3.954s] make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[3.954s] /usr/bin/make  -f CMakeFiles/ros-qualisys.dir/build.make CMakeFiles/ros-qualisys.dir/depend
+[3.955s] make[2]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[3.955s] cd /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys && /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/zeb/bluerov2_pid/ros_qualysis/src /home/zeb/bluerov2_pid/ros_qualysis/src /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/ros-qualisys.dir/DependInfo.cmake --color=
+[3.958s] make[2]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[3.958s] /usr/bin/make  -f CMakeFiles/ros-qualisys.dir/build.make CMakeFiles/ros-qualisys.dir/build
+[3.959s] make[2]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[3.961s] [ 25%] [32mBuilding CXX object CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o[0m
+[3.962s] /usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"ros-qualisys\" -Dros_qualisys_EXPORTS -I/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys -I/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/include -I/home/zeb/bluerov2_pid/ros_qualysis/src/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/local/include/qualisys_cpp_sdk -pedantic -Wno-long-long -Wall -Wextra -Wcast-align -Wcast-qual -Wformat -Wwrite-strings -Wconversion  -fPIC -MD -MT CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o -MF CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o.d -o CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o -c /home/zeb/bluerov2_pid/ros_qualysis/src/src/qualisys-to-ros.cpp
+[4.992s] [ 50%] [32m[1mLinking CXX shared library libros-qualisys.so[0m
+[4.993s] /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/ros-qualisys.dir/link.txt --verbose=1
+[4.994s] /usr/bin/c++ -fPIC -pedantic -Wno-long-long -Wall -Wextra -Wcast-align -Wcast-qual -Wformat -Wwrite-strings -Wconversion  -shared -Wl,-soname,libros-qualisys.so.1.0.0 -o libros-qualisys.so.1.0.0 "CMakeFiles/ros-qualisys.dir/src/qualisys-to-ros.cpp.o"  -Wl,-rpath,/opt/ros/noetic/lib: /opt/ros/noetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 /usr/local/lib/libqualisys_cpp_sdk.a /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so 
+[5.083s] /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_symlink_library libros-qualisys.so.1.0.0 libros-qualisys.so.1.0.0 libros-qualisys.so
+[5.086s] make[2]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[5.089s] [ 50%] Built target ros-qualisys
+[5.089s] /usr/bin/make  -f CMakeFiles/ros-qualisys-node.dir/build.make CMakeFiles/ros-qualisys-node.dir/depend
+[5.090s] make[2]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[5.090s] cd /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys && /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/zeb/bluerov2_pid/ros_qualysis/src /home/zeb/bluerov2_pid/ros_qualysis/src /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/ros-qualisys-node.dir/DependInfo.cmake --color=
+[5.093s] make[2]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[5.093s] /usr/bin/make  -f CMakeFiles/ros-qualisys-node.dir/build.make CMakeFiles/ros-qualisys-node.dir/build
+[5.094s] make[2]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[5.096s] [ 75%] [32mBuilding CXX object CMakeFiles/ros-qualisys-node.dir/src/ros-qualisys.cpp.o[0m
+[5.096s] /usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"ros-qualisys\" -I/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys -I/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/include -I/home/zeb/bluerov2_pid/ros_qualysis/src/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/local/include/qualisys_cpp_sdk -pedantic -Wno-long-long -Wall -Wextra -Wcast-align -Wcast-qual -Wformat -Wwrite-strings -Wconversion  -MD -MT CMakeFiles/ros-qualisys-node.dir/src/ros-qualisys.cpp.o -MF CMakeFiles/ros-qualisys-node.dir/src/ros-qualisys.cpp.o.d -o CMakeFiles/ros-qualisys-node.dir/src/ros-qualisys.cpp.o -c /home/zeb/bluerov2_pid/ros_qualysis/src/src/ros-qualisys.cpp
+[6.036s] [100%] [32m[1mLinking CXX executable ros-qualisys[0m
+[6.036s] /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/ros-qualisys-node.dir/link.txt --verbose=1
+[6.037s] /usr/bin/c++ -pedantic -Wno-long-long -Wall -Wextra -Wcast-align -Wcast-qual -Wformat -Wwrite-strings -Wconversion  "CMakeFiles/ros-qualisys-node.dir/src/ros-qualisys.cpp.o" -o ros-qualisys  -Wl,-rpath,/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys:/opt/ros/noetic/lib: libros-qualisys.so.1.0.0 /opt/ros/noetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /usr/local/lib/libqualisys_cpp_sdk.a 
+[6.115s] make[2]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[6.118s] [100%] Built target ros-qualisys-node
+[6.118s] make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys'
+[6.118s] /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_progress_start /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles 0
+[6.121s] Invoked command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys' returned '0': /usr/local/bin/cmake --build /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys -- -j22 -l22
+[6.127s] Invoking command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys': /usr/local/bin/cmake --install /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys
+[6.129s] -- Install configuration: ""
+[6.129s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/include/ros-qualisys/config.hh
+[6.129s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/include/ros-qualisys/deprecated.hh
+[6.129s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/include/ros-qualisys/warning.hh
+[6.130s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/_setup_util.py
+[6.130s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/env.sh
+[6.130s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/setup.bash
+[6.130s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/local_setup.bash
+[6.130s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/setup.sh
+[6.130s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/local_setup.sh
+[6.130s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/setup.zsh
+[6.130s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/local_setup.zsh
+[6.131s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/setup.fish
+[6.131s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/local_setup.fish
+[6.131s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/.rosinstall
+[6.131s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/libros-qualisys.so.1.0.0
+[6.132s] -- Set runtime path of "/home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/libros-qualisys.so.1.0.0" to ""
+[6.132s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/libros-qualisys.so
+[6.132s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/ros-qualisys/ros-qualisys
+[6.132s] -- Set runtime path of "/home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/ros-qualisys/ros-qualisys" to "$ORIGIN/../lib"
+[6.132s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/package.xml
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/config
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/config/bauzil-qualisys.yaml
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/launch
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/launch/qualisys_bauzil_bringup.launch
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/scripts
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/scripts/tf2_pose_gt_real.py
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/ros-qualisys/tf2_pose_gt_real.py
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/pkgconfig/ros-qualisys.pc
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/include/ros-qualisys/qualisys-to-ros.hpp
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ament_index/resource_index/packages/ros-qualisys
+[6.133s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/hook/ament_prefix_path.dsv
+[6.134s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/hook/python_path.dsv
+[6.134s] -- Up-to-date: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/share/ros-qualisys/package.xml
+[6.134s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysConfig.cmake
+[6.134s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysConfigVersion.cmake
+[6.134s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysTargets.cmake
+[6.134s] -- Installing: /home/zeb/bluerov2_pid/ros_qualysis/install/ros-qualisys/lib/cmake/ros-qualisys/ros-qualisysTargets-noconfig.cmake
+[6.135s] Invoked command in '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys' returned '0': /usr/local/bin/cmake --install /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys

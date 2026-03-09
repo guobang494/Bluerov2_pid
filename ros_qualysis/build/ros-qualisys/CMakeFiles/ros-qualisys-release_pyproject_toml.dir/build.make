@@ -71,7 +71,7 @@ include CMakeFiles/ros-qualisys-release_pyproject_toml.dir/progress.make
 
 CMakeFiles/ros-qualisys-release_pyproject_toml:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Update pyproject.toml for ros-qualisys"
-	cd /home/zeb/bluerov2_pid/ros_qualysis/src && /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/_deps/jrl-cmakemodules-src/pyproject.py $$VERSION && if ! ( git diff --quiet pyproject.toml ) then ( /usr/bin/git add pyproject.toml && /usr/bin/git commit -m release:\ Update\ pyproject.toml\ version\ to\ $$VERSION && echo Updated\ pyproject.toml\ and\ committed ) fi
+	cd /home/zeb/bluerov2_pid/ros_qualysis/src && /usr/bin/python3 /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/_deps/jrl-cmakemodules-src/pyproject.py $$VERSION && if ! ( git diff --quiet pyproject.toml ) then ( /usr/bin/git add pyproject.toml && /usr/bin/git commit -m release:\ Update\ pyproject.toml\ version\ to\ $$VERSION && echo Updated\ pyproject.toml\ and\ committed ) fi
 
 ros-qualisys-release_pyproject_toml: CMakeFiles/ros-qualisys-release_pyproject_toml
 ros-qualisys-release_pyproject_toml: CMakeFiles/ros-qualisys-release_pyproject_toml.dir/build.make

@@ -67,7 +67,7 @@ set(bluerov2_motion_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(bluerov2_motion_control_SOURCE_PREFIX /home/zeb/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control)
+  set(bluerov2_motion_control_SOURCE_PREFIX /home/zeb/bluerov2_pid/bluerov2_control/src/tank-setup/bluerov2_motion_control)
   set(bluerov2_motion_control_DEVEL_PREFIX /home/zeb/bluerov2_pid/bluerov2_control/devel)
   set(bluerov2_motion_control_INSTALL_PREFIX "")
   set(bluerov2_motion_control_PREFIX ${bluerov2_motion_control_DEVEL_PREFIX})
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(bluerov2_motion_control_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zeb/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control/include " STREQUAL " ")
+if(NOT "/home/zeb/bluerov2_pid/bluerov2_control/src/tank-setup/bluerov2_motion_control/include " STREQUAL " ")
   set(bluerov2_motion_control_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zeb/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control/include")
+  set(_include_dirs "/home/zeb/bluerov2_pid/bluerov2_control/src/tank-setup/bluerov2_motion_control/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zeb/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control/incl
         message(FATAL_ERROR "Project 'bluerov2_motion_control' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'bluerov2_motion_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zeb/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'bluerov2_motion_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zeb/bluerov2_pid/bluerov2_control/src/tank-setup/bluerov2_motion_control/${idir}'.  ${_report}")
     endif()
     _list_append_unique(bluerov2_motion_control_INCLUDE_DIRS ${include})
   endforeach()
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zeb/bluerov2_pid/bluerov2_control/devel/lib;/home/zeb/ws_moveit/devel/lib;/home/zeb/ros_workspace/install/ros-qualisys/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zeb/bluerov2_pid/bluerov2_control/devel/lib;/home/zeb/bluerov2_pid/bluerov2_control/devel/lib;/home/zeb/ws_moveit/devel/lib;/home/zeb/ros_workspace/install/ros-qualisys/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

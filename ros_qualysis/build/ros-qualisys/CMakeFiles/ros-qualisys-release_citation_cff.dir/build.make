@@ -71,7 +71,7 @@ include CMakeFiles/ros-qualisys-release_citation_cff.dir/progress.make
 
 CMakeFiles/ros-qualisys-release_citation_cff:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Update CITATION.cff for ros-qualisys"
-	cd /home/zeb/bluerov2_pid/ros_qualysis/src && sed -i.back "s|^version:.*|version:\ $$VERSION|;s|^date-released:.*|date-released:\ \"2026-02-11\"|" CITATION.cff && rm CITATION.cff.back && /usr/bin/git add CITATION.cff && /usr/bin/git commit -m release:\ Update\ CITATION.cff\ version\ to\ $$VERSION && echo Updated\ CITATION.cff\ and\ committed
+	cd /home/zeb/bluerov2_pid/ros_qualysis/src && sed -i.back "s|^version:.*|version:\ $$VERSION|;s|^date-released:.*|date-released:\ \"2026-03-06\"|" CITATION.cff && rm CITATION.cff.back && /usr/bin/git add CITATION.cff && /usr/bin/git commit -m release:\ Update\ CITATION.cff\ version\ to\ $$VERSION && echo Updated\ CITATION.cff\ and\ committed
 
 ros-qualisys-release_citation_cff: CMakeFiles/ros-qualisys-release_citation_cff
 ros-qualisys-release_citation_cff: CMakeFiles/ros-qualisys-release_citation_cff.dir/build.make

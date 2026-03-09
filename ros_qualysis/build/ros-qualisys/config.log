@@ -27,6 +27,7 @@ PATH /usr/games
 PATH /usr/local/games
 PATH /snap/bin
 
+PKG_CONFIG_PATH /home/zeb/bluerov2_pid/bluerov2_control/devel/lib/pkgconfig
 PKG_CONFIG_PATH /home/zeb/ws_moveit/devel/lib/pkgconfig
 PKG_CONFIG_PATH /home/zeb/ros_workspace/install/ros-qualisys/lib/pkgconfig
 PKG_CONFIG_PATH /opt/ros/noetic/lib/pkgconfig
@@ -39,7 +40,7 @@ PKG_CONFIG_PATH /opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig
 CMAKE_ROOT = /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26
 CMAKE_INCLUDE_PATH = 
 CMAKE_LIBRARY_PATH = 
-CMAKE_PREFIX_PATH = /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/devel;/home/zeb/ws_moveit/devel;/home/zeb/ros_workspace/install/ros-qualisys;/opt/ros/noetic
+CMAKE_PREFIX_PATH = /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/devel;/home/zeb/bluerov2_pid/bluerov2_control/devel;/home/zeb/ws_moveit/devel;/home/zeb/ros_workspace/install/ros-qualisys;/opt/ros/noetic
 CMAKE_INSTALL_ALWAYS = 
 CMAKE_SKIP_RPATH = NO
 CMAKE_SUPPRESS_REGENERATION = 

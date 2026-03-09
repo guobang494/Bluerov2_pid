@@ -5,5 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("bluerov2_motion_control")
+subdirs("tank-setup/guidance_law")
+subdirs("tank-setup/bluerov2_motion_control")
 subdirs("mavros_pub")

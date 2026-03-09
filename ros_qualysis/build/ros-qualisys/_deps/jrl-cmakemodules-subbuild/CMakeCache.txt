@@ -26,7 +26,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/zeb/bluerov2_pid/ros_qualysis/buil
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
-//Path to a program.
+//No help, variable specified on the command line.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
 
 //Value Computed by CMake

@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AQA3OM"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AQA3OM"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tIcvrd"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tIcvrd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -49,12 +49,12 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AQA3OM
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tIcvrd
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_38b81/fast && /usr/bin/make  -f CMakeFiles/cmTC_38b81.dir/build.make CMakeFiles/cmTC_38b81.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AQA3OM'
-        Building CXX object CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c54e6/fast && /usr/bin/make  -f CMakeFiles/cmTC_c54e6.dir/build.make CMakeFiles/cmTC_c54e6.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tIcvrd'
+        Building CXX object CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -63,8 +63,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8ZlKny.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccJftmoZ.s
         GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -88,15 +88,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc8ZlKny.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccJftmoZ.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_38b81
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38b81.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_38b81 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_c54e6
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c54e6.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c54e6 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -108,10 +108,10 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38b81' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc796UQ3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_38b81 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38b81' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AQA3OM'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c54e6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3wbiCq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c54e6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c54e6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tIcvrd'
         
       exitCode: 0
   -
@@ -151,12 +151,12 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AQA3OM]
+        ignore line: [Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tIcvrd]
         ignore line: []
-        ignore line: [Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_38b81/fast && /usr/bin/make  -f CMakeFiles/cmTC_38b81.dir/build.make CMakeFiles/cmTC_38b81.dir/build]
-        ignore line: [make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AQA3OM']
-        ignore line: [Building CXX object CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c54e6/fast && /usr/bin/make  -f CMakeFiles/cmTC_c54e6.dir/build.make CMakeFiles/cmTC_c54e6.dir/build]
+        ignore line: [make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tIcvrd']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -165,8 +165,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8ZlKny.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccJftmoZ.s]
         ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -190,15 +190,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc8ZlKny.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccJftmoZ.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_38b81]
-        ignore line: [/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38b81.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_38b81 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_c54e6]
+        ignore line: [/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c54e6.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c54e6 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -210,13 +210,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38b81' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc796UQ3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_38b81 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c54e6' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3wbiCq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c54e6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc796UQ3.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc3wbiCq.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -234,7 +234,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_38b81] ==> ignore
+          arg [cmTC_c54e6] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -246,7 +246,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_38b81.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_c54e6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -286,8 +286,8 @@ events:
     checks:
       - "Performing Test res_-pedantic"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-H33EIP"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-H33EIP"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-SPnGBg"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-SPnGBg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -296,17 +296,17 @@ events:
       variable: "res_-pedantic"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-H33EIP
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-SPnGBg
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fa7fb/fast && /usr/bin/make  -f CMakeFiles/cmTC_fa7fb.dir/build.make CMakeFiles/cmTC_fa7fb.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-H33EIP'
-        Building CXX object CMakeFiles/cmTC_fa7fb.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-pedantic -pedantic -o CMakeFiles/cmTC_fa7fb.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-H33EIP/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1bdc8/fast && /usr/bin/make  -f CMakeFiles/cmTC_1bdc8.dir/build.make CMakeFiles/cmTC_1bdc8.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-SPnGBg'
+        Building CXX object CMakeFiles/cmTC_1bdc8.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-pedantic -pedantic -o CMakeFiles/cmTC_1bdc8.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-SPnGBg/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_fa7fb
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa7fb.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_fa7fb.dir/src.cxx.o -o cmTC_fa7fb 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-H33EIP'
+        Linking CXX executable cmTC_1bdc8
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bdc8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_1bdc8.dir/src.cxx.o -o cmTC_1bdc8 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-SPnGBg'
         
       exitCode: 0
   -
@@ -322,8 +322,8 @@ events:
     checks:
       - "Performing Test res_-Wno-long-long"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-q5ifLO"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-q5ifLO"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-kScT5f"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-kScT5f"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -332,17 +332,17 @@ events:
       variable: "res_-Wno-long-long"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-q5ifLO
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-kScT5f
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3cc67/fast && /usr/bin/make  -f CMakeFiles/cmTC_3cc67.dir/build.make CMakeFiles/cmTC_3cc67.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-q5ifLO'
-        Building CXX object CMakeFiles/cmTC_3cc67.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Wno-long-long -Wno-long-long -o CMakeFiles/cmTC_3cc67.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-q5ifLO/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0ca4e/fast && /usr/bin/make  -f CMakeFiles/cmTC_0ca4e.dir/build.make CMakeFiles/cmTC_0ca4e.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-kScT5f'
+        Building CXX object CMakeFiles/cmTC_0ca4e.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Wno-long-long -Wno-long-long -o CMakeFiles/cmTC_0ca4e.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-kScT5f/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_3cc67
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cc67.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_3cc67.dir/src.cxx.o -o cmTC_3cc67 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-q5ifLO'
+        Linking CXX executable cmTC_0ca4e
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ca4e.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_0ca4e.dir/src.cxx.o -o cmTC_0ca4e 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-kScT5f'
         
       exitCode: 0
   -
@@ -358,8 +358,8 @@ events:
     checks:
       - "Performing Test res_-Wall"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-pBpuzP"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-pBpuzP"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Q78HPe"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Q78HPe"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -368,17 +368,17 @@ events:
       variable: "res_-Wall"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-pBpuzP
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Q78HPe
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f7dee/fast && /usr/bin/make  -f CMakeFiles/cmTC_f7dee.dir/build.make CMakeFiles/cmTC_f7dee.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-pBpuzP'
-        Building CXX object CMakeFiles/cmTC_f7dee.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Wall -Wall -o CMakeFiles/cmTC_f7dee.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-pBpuzP/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a40fc/fast && /usr/bin/make  -f CMakeFiles/cmTC_a40fc.dir/build.make CMakeFiles/cmTC_a40fc.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Q78HPe'
+        Building CXX object CMakeFiles/cmTC_a40fc.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Wall -Wall -o CMakeFiles/cmTC_a40fc.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Q78HPe/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_f7dee
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7dee.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_f7dee.dir/src.cxx.o -o cmTC_f7dee 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-pBpuzP'
+        Linking CXX executable cmTC_a40fc
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a40fc.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_a40fc.dir/src.cxx.o -o cmTC_a40fc 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Q78HPe'
         
       exitCode: 0
   -
@@ -394,8 +394,8 @@ events:
     checks:
       - "Performing Test res_-Wextra"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tRZvsM"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tRZvsM"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AcUaZc"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AcUaZc"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -404,17 +404,17 @@ events:
       variable: "res_-Wextra"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tRZvsM
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AcUaZc
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ce436/fast && /usr/bin/make  -f CMakeFiles/cmTC_ce436.dir/build.make CMakeFiles/cmTC_ce436.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tRZvsM'
-        Building CXX object CMakeFiles/cmTC_ce436.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Wextra -Wextra -o CMakeFiles/cmTC_ce436.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tRZvsM/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_76476/fast && /usr/bin/make  -f CMakeFiles/cmTC_76476.dir/build.make CMakeFiles/cmTC_76476.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AcUaZc'
+        Building CXX object CMakeFiles/cmTC_76476.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Wextra -Wextra -o CMakeFiles/cmTC_76476.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AcUaZc/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_ce436
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce436.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_ce436.dir/src.cxx.o -o cmTC_ce436 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-tRZvsM'
+        Linking CXX executable cmTC_76476
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76476.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_76476.dir/src.cxx.o -o cmTC_76476 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-AcUaZc'
         
       exitCode: 0
   -
@@ -430,8 +430,8 @@ events:
     checks:
       - "Performing Test res_-Wcast-align"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-jA1eXP"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-jA1eXP"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-99TlHd"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-99TlHd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -440,17 +440,17 @@ events:
       variable: "res_-Wcast-align"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-jA1eXP
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-99TlHd
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f2261/fast && /usr/bin/make  -f CMakeFiles/cmTC_f2261.dir/build.make CMakeFiles/cmTC_f2261.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-jA1eXP'
-        Building CXX object CMakeFiles/cmTC_f2261.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Wcast-align -Wcast-align -o CMakeFiles/cmTC_f2261.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-jA1eXP/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6cf19/fast && /usr/bin/make  -f CMakeFiles/cmTC_6cf19.dir/build.make CMakeFiles/cmTC_6cf19.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-99TlHd'
+        Building CXX object CMakeFiles/cmTC_6cf19.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Wcast-align -Wcast-align -o CMakeFiles/cmTC_6cf19.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-99TlHd/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_f2261
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2261.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_f2261.dir/src.cxx.o -o cmTC_f2261 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-jA1eXP'
+        Linking CXX executable cmTC_6cf19
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cf19.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_6cf19.dir/src.cxx.o -o cmTC_6cf19 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-99TlHd'
         
       exitCode: 0
   -
@@ -466,8 +466,8 @@ events:
     checks:
       - "Performing Test res_-Wcast-qual"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-cep4vP"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-cep4vP"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-QNpv8c"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-QNpv8c"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -476,17 +476,17 @@ events:
       variable: "res_-Wcast-qual"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-cep4vP
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-QNpv8c
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d5eb6/fast && /usr/bin/make  -f CMakeFiles/cmTC_d5eb6.dir/build.make CMakeFiles/cmTC_d5eb6.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-cep4vP'
-        Building CXX object CMakeFiles/cmTC_d5eb6.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Wcast-qual -Wcast-qual -o CMakeFiles/cmTC_d5eb6.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-cep4vP/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c6434/fast && /usr/bin/make  -f CMakeFiles/cmTC_c6434.dir/build.make CMakeFiles/cmTC_c6434.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-QNpv8c'
+        Building CXX object CMakeFiles/cmTC_c6434.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Wcast-qual -Wcast-qual -o CMakeFiles/cmTC_c6434.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-QNpv8c/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_d5eb6
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5eb6.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_d5eb6.dir/src.cxx.o -o cmTC_d5eb6 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-cep4vP'
+        Linking CXX executable cmTC_c6434
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6434.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_c6434.dir/src.cxx.o -o cmTC_c6434 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-QNpv8c'
         
       exitCode: 0
   -
@@ -502,8 +502,8 @@ events:
     checks:
       - "Performing Test res_-Wformat"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Oe2IcN"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Oe2IcN"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-VITNeg"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-VITNeg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -512,17 +512,17 @@ events:
       variable: "res_-Wformat"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Oe2IcN
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-VITNeg
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_eff57/fast && /usr/bin/make  -f CMakeFiles/cmTC_eff57.dir/build.make CMakeFiles/cmTC_eff57.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Oe2IcN'
-        Building CXX object CMakeFiles/cmTC_eff57.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Wformat -Wformat -o CMakeFiles/cmTC_eff57.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Oe2IcN/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c8198/fast && /usr/bin/make  -f CMakeFiles/cmTC_c8198.dir/build.make CMakeFiles/cmTC_c8198.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-VITNeg'
+        Building CXX object CMakeFiles/cmTC_c8198.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Wformat -Wformat -o CMakeFiles/cmTC_c8198.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-VITNeg/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_eff57
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eff57.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_eff57.dir/src.cxx.o -o cmTC_eff57 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Oe2IcN'
+        Linking CXX executable cmTC_c8198
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8198.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_c8198.dir/src.cxx.o -o cmTC_c8198 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-VITNeg'
         
       exitCode: 0
   -
@@ -538,8 +538,8 @@ events:
     checks:
       - "Performing Test res_-Wwrite-strings"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Cu8L4P"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Cu8L4P"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dIj52f"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dIj52f"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -548,17 +548,17 @@ events:
       variable: "res_-Wwrite-strings"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Cu8L4P
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dIj52f
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3209b/fast && /usr/bin/make  -f CMakeFiles/cmTC_3209b.dir/build.make CMakeFiles/cmTC_3209b.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Cu8L4P'
-        Building CXX object CMakeFiles/cmTC_3209b.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Wwrite-strings -Wwrite-strings -o CMakeFiles/cmTC_3209b.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Cu8L4P/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_994fa/fast && /usr/bin/make  -f CMakeFiles/cmTC_994fa.dir/build.make CMakeFiles/cmTC_994fa.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dIj52f'
+        Building CXX object CMakeFiles/cmTC_994fa.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Wwrite-strings -Wwrite-strings -o CMakeFiles/cmTC_994fa.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dIj52f/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_3209b
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3209b.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_3209b.dir/src.cxx.o -o cmTC_3209b 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-Cu8L4P'
+        Linking CXX executable cmTC_994fa
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_994fa.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_994fa.dir/src.cxx.o -o cmTC_994fa 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dIj52f'
         
       exitCode: 0
   -
@@ -574,8 +574,8 @@ events:
     checks:
       - "Performing Test res_-Wconversion"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-xIXRZM"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-xIXRZM"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-irnW4c"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-irnW4c"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -584,17 +584,17 @@ events:
       variable: "res_-Wconversion"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-xIXRZM
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-irnW4c
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_79db0/fast && /usr/bin/make  -f CMakeFiles/cmTC_79db0.dir/build.make CMakeFiles/cmTC_79db0.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-xIXRZM'
-        Building CXX object CMakeFiles/cmTC_79db0.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Wconversion -Wconversion -o CMakeFiles/cmTC_79db0.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-xIXRZM/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_60d98/fast && /usr/bin/make  -f CMakeFiles/cmTC_60d98.dir/build.make CMakeFiles/cmTC_60d98.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-irnW4c'
+        Building CXX object CMakeFiles/cmTC_60d98.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Wconversion -Wconversion -o CMakeFiles/cmTC_60d98.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-irnW4c/src.cxx
         <command-line>: warning: ISO C++11 requires whitespace after the macro name
-        Linking CXX executable cmTC_79db0
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79db0.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_79db0.dir/src.cxx.o -o cmTC_79db0 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-xIXRZM'
+        Linking CXX executable cmTC_60d98
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60d98.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_60d98.dir/src.cxx.o -o cmTC_60d98 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-irnW4c'
         
       exitCode: 0
   -
@@ -610,8 +610,8 @@ events:
     checks:
       - "Performing Test res_-Werror"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-bJWnDN"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-bJWnDN"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-lC4vkd"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-lC4vkd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -620,17 +620,17 @@ events:
       variable: "res_-Werror"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-bJWnDN
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-lC4vkd
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6ebc1/fast && /usr/bin/make  -f CMakeFiles/cmTC_6ebc1.dir/build.make CMakeFiles/cmTC_6ebc1.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-bJWnDN'
-        Building CXX object CMakeFiles/cmTC_6ebc1.dir/src.cxx.o
-        /usr/bin/c++   -Dres_-Werror -Werror -o CMakeFiles/cmTC_6ebc1.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-bJWnDN/src.cxx
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_de146/fast && /usr/bin/make  -f CMakeFiles/cmTC_de146.dir/build.make CMakeFiles/cmTC_de146.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-lC4vkd'
+        Building CXX object CMakeFiles/cmTC_de146.dir/src.cxx.o
+        /usr/bin/c++   -Dres_-Werror -Werror -o CMakeFiles/cmTC_de146.dir/src.cxx.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-lC4vkd/src.cxx
         <command-line>: error: ISO C++11 requires whitespace after the macro name [-Werror]
         cc1plus: all warnings being treated as errors
-        make[1]: *** [CMakeFiles/cmTC_6ebc1.dir/build.make:78: CMakeFiles/cmTC_6ebc1.dir/src.cxx.o] Error 1
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-bJWnDN'
-        make: *** [Makefile:127: cmTC_6ebc1/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_de146.dir/build.make:78: CMakeFiles/cmTC_de146.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-lC4vkd'
+        make: *** [Makefile:127: cmTC_de146/fast] Error 2
         
       exitCode: 2
   -
@@ -666,8 +666,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-B0RRzM"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-B0RRzM"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-2vp83e"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-2vp83e"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -676,12 +676,12 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-B0RRzM
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-2vp83e
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ca217/fast && /usr/bin/make  -f CMakeFiles/cmTC_ca217.dir/build.make CMakeFiles/cmTC_ca217.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-B0RRzM'
-        Building C object CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o -c /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_60a72/fast && /usr/bin/make  -f CMakeFiles/cmTC_60a72.dir/build.make CMakeFiles/cmTC_60a72.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-2vp83e'
+        Building C object CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o -c /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -690,8 +690,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccAvU6Hc.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5mTOTD.s
         GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -711,15 +711,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o /tmp/ccAvU6Hc.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o /tmp/cc5mTOTD.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_ca217
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca217.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o -o cmTC_ca217 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_60a72
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60a72.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o -o cmTC_60a72 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -731,10 +731,10 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca217' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cccHFWDE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ca217 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca217' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-B0RRzM'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60a72' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpGPZI6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_60a72 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60a72' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-2vp83e'
         
       exitCode: 0
   -
@@ -770,12 +770,12 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-B0RRzM]
+        ignore line: [Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-2vp83e]
         ignore line: []
-        ignore line: [Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ca217/fast && /usr/bin/make  -f CMakeFiles/cmTC_ca217.dir/build.make CMakeFiles/cmTC_ca217.dir/build]
-        ignore line: [make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-B0RRzM']
-        ignore line: [Building C object CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o -c /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_60a72/fast && /usr/bin/make  -f CMakeFiles/cmTC_60a72.dir/build.make CMakeFiles/cmTC_60a72.dir/build]
+        ignore line: [make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-2vp83e']
+        ignore line: [Building C object CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o -c /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -784,8 +784,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccAvU6Hc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake-3.26.4-linux-x86_64/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5mTOTD.s]
         ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -805,15 +805,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o /tmp/ccAvU6Hc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o /tmp/cc5mTOTD.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_ca217]
-        ignore line: [/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca217.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o -o cmTC_ca217 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_60a72]
+        ignore line: [/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60a72.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o -o cmTC_60a72 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -825,13 +825,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca217' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cccHFWDE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ca217 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60a72' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpGPZI6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_60a72 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cccHFWDE.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccpGPZI6.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -849,7 +849,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ca217] ==> ignore
+          arg [cmTC_60a72] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -861,7 +861,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_ca217.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_60a72.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -911,8 +911,8 @@ events:
       - "/opt/ros/noetic/share/tf2/cmake/tf2Config.cmake:199 (find_package)"
       - "CMakeLists.txt:47 (find_package)"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dnT05O"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dnT05O"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-L0wfaf"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-L0wfaf"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -921,24 +921,24 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dnT05O
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-L0wfaf
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a278b/fast && /usr/bin/make  -f CMakeFiles/cmTC_a278b.dir/build.make CMakeFiles/cmTC_a278b.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dnT05O'
-        Building C object CMakeFiles/cmTC_a278b.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a278b.dir/src.c.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dnT05O/src.c
-        Linking C executable cmTC_a278b
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a278b.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_a278b.dir/src.c.o -o cmTC_a278b 
-        /usr/bin/ld: CMakeFiles/cmTC_a278b.dir/src.c.o: in function `main':
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e9f33/fast && /usr/bin/make  -f CMakeFiles/cmTC_e9f33.dir/build.make CMakeFiles/cmTC_e9f33.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-L0wfaf'
+        Building C object CMakeFiles/cmTC_e9f33.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e9f33.dir/src.c.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-L0wfaf/src.c
+        Linking C executable cmTC_e9f33
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9f33.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e9f33.dir/src.c.o -o cmTC_e9f33 
+        /usr/bin/ld: CMakeFiles/cmTC_e9f33.dir/src.c.o: in function `main':
         src.c:(.text+0x46): undefined reference to `pthread_create'
         /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
         /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
         /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
         collect2: error: ld returned 1 exit status
-        make[1]: *** [CMakeFiles/cmTC_a278b.dir/build.make:99: cmTC_a278b] Error 1
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-dnT05O'
-        make: *** [Makefile:127: cmTC_a278b/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_e9f33.dir/build.make:99: cmTC_e9f33] Error 1
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-L0wfaf'
+        make: *** [Makefile:127: cmTC_e9f33/fast] Error 2
         
       exitCode: 2
   -
@@ -959,8 +959,8 @@ events:
       - "/opt/ros/noetic/share/tf2/cmake/tf2Config.cmake:199 (find_package)"
       - "CMakeLists.txt:47 (find_package)"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-C2kSqP"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-C2kSqP"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-ffO3oe"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-ffO3oe"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -969,20 +969,20 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-C2kSqP
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-ffO3oe
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_387e8/fast && /usr/bin/make  -f CMakeFiles/cmTC_387e8.dir/build.make CMakeFiles/cmTC_387e8.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-C2kSqP'
-        Building C object CMakeFiles/cmTC_387e8.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_387e8.dir/CheckFunctionExists.c.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-C2kSqP/CheckFunctionExists.c
-        Linking C executable cmTC_387e8
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_387e8.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_387e8.dir/CheckFunctionExists.c.o -o cmTC_387e8  -lpthreads 
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b1802/fast && /usr/bin/make  -f CMakeFiles/cmTC_b1802.dir/build.make CMakeFiles/cmTC_b1802.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-ffO3oe'
+        Building C object CMakeFiles/cmTC_b1802.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_b1802.dir/CheckFunctionExists.c.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-ffO3oe/CheckFunctionExists.c
+        Linking C executable cmTC_b1802
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1802.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_b1802.dir/CheckFunctionExists.c.o -o cmTC_b1802  -lpthreads 
         /usr/bin/ld: cannot find -lpthreads
         collect2: error: ld returned 1 exit status
-        make[1]: *** [CMakeFiles/cmTC_387e8.dir/build.make:99: cmTC_387e8] Error 1
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-C2kSqP'
-        make: *** [Makefile:127: cmTC_387e8/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_b1802.dir/build.make:99: cmTC_b1802] Error 1
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-ffO3oe'
+        make: *** [Makefile:127: cmTC_b1802/fast] Error 2
         
       exitCode: 2
   -
@@ -1003,8 +1003,8 @@ events:
       - "/opt/ros/noetic/share/tf2/cmake/tf2Config.cmake:199 (find_package)"
       - "CMakeLists.txt:47 (find_package)"
     directories:
-      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-hWHlnQ"
-      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-hWHlnQ"
+      source: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-PUCVOe"
+      binary: "/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-PUCVOe"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1013,16 +1013,16 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-hWHlnQ
+        Change Dir: /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-PUCVOe
         
-        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a3715/fast && /usr/bin/make  -f CMakeFiles/cmTC_a3715.dir/build.make CMakeFiles/cmTC_a3715.dir/build
-        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-hWHlnQ'
-        Building C object CMakeFiles/cmTC_a3715.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_a3715.dir/CheckFunctionExists.c.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-hWHlnQ/CheckFunctionExists.c
-        Linking C executable cmTC_a3715
-        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3715.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_a3715.dir/CheckFunctionExists.c.o -o cmTC_a3715  -lpthread 
-        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-hWHlnQ'
+        Run Build Command(s):/opt/cmake-3.26.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_03558/fast && /usr/bin/make  -f CMakeFiles/cmTC_03558.dir/build.make CMakeFiles/cmTC_03558.dir/build
+        make[1]: Entering directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-PUCVOe'
+        Building C object CMakeFiles/cmTC_03558.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_03558.dir/CheckFunctionExists.c.o -c /home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-PUCVOe/CheckFunctionExists.c
+        Linking C executable cmTC_03558
+        /opt/cmake-3.26.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03558.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_03558.dir/CheckFunctionExists.c.o -o cmTC_03558  -lpthread 
+        make[1]: Leaving directory '/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles/CMakeScratch/TryCompile-PUCVOe'
         
       exitCode: 0
 ...

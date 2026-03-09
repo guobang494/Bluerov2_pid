@@ -11,7 +11,7 @@ def clamp(x, lo, hi):
     return lo if x < lo else hi if x > hi else x
 
 # map to pwm
-def map_to_pwm_x(n, pwm_min_x=1400, pwm_mid_x=1500, pwm_max_x=1600, deadband=0.023):
+def map_to_pwm_x(n, pwm_min_x=1450, pwm_mid_x=1500, pwm_max_x=1550, deadband=0.023):
     n = clamp(n, -1.0, 1.0)
     if abs(n) < deadband:
         return pwm_mid_x
@@ -21,7 +21,7 @@ def map_to_pwm_x(n, pwm_min_x=1400, pwm_mid_x=1500, pwm_max_x=1600, deadband=0.0
         pwm = pwm_mid_x + n * (pwm_mid_x - pwm_min_x)
     return int(clamp(int(round(pwm)), pwm_min_x, pwm_max_x))
 
-def map_to_pwm_y(n, pwm_min_y=1400, pwm_mid_y=1500, pwm_max_y=1600, deadband=0.023):
+def map_to_pwm_y(n, pwm_min_y=1450, pwm_mid_y=1500, pwm_max_y=1550, deadband=0.023):
     n = clamp(n, -1.0, 1.0)
     if abs(n) < deadband:
         return pwm_mid_y

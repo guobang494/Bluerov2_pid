@@ -61,3 +61,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros_pub" TYPE PROGRAM FILES "/home/zeb/bluerov2_pid/bluerov2_control/build/mavros_pub/catkin_generated/installspace/pub_signal.py")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros_pub" TYPE PROGRAM FILES "/home/zeb/bluerov2_pid/bluerov2_control/build/mavros_pub/catkin_generated/installspace/tf2_pose_gt_real.py")
+endif()
+

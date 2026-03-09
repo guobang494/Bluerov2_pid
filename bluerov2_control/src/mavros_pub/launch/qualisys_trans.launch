@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="child_frame_id" default="BlueROV2H"/>
+    <arg name="frame_id" default="mocap"/>
+    <arg name="publish_rate" default="20.0"/>
+    <arg name="pose_topic" default="/bluerov2_heavy"/>
+
+    <node name="tf2_pose_gt_real" pkg="mavros_pub" type="tf2_pose_gt_real.py" output="screen">
+        <param name="child_frame_id" value="$(arg child_frame_id)"/>
+        <param name="frame_id" value="$(arg frame_id)"/>
+        <param name="publish_rate" value="$(arg publish_rate)"/>
+        <param name="pose_topic" value="$(arg pose_topic)"/>
+    </node>
+</launch>

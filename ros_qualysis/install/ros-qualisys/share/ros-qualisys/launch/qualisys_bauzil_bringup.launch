@@ -1,5 +1,5 @@
 <launch>
-  <arg name="server_address" default="198.168.8.189"/>
+  <arg name="server_address" default="192.168.8.112"/>
   <arg name="server_base_port"     default="33333"/>
 
   <node pkg="ros-qualisys" type="ros-qualisys" name="qualisys" output="screen">
@@ -22,4 +22,10 @@
     <param name="publish_rate" value="$(arg publish_rate)"/>
     <param name="pose_topic" value="$(arg pose_topic)"/> 
    </node>  --> 
+   <!-- <node pkg="ros-qualisys" type="tf2_pose_gt_real.py" name="tf2_pose_gt_real" output="screen">
+    <param name="child_frame_id" value="BlueROV2H"/>
+    <param name="frame_id" value="mocap"/>
+    <param name="publish_rate" value="20.0"/>
+    <param name="pose_topic" value="/bluerov2_heavy"/>
+   </node> -->
 </launch>

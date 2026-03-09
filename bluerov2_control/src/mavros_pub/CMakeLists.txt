@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   mavros_msgs
   geometry_msgs
+  tf
 )
 
 ## System dependencies are found with CMake's conventions
@@ -159,6 +160,7 @@ target_link_libraries(example_node ${catkin_LIBRARIES})
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
   scripts/pub_signal.py
+  scripts/tf2_pose_gt_real.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

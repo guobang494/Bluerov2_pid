@@ -71,7 +71,7 @@ include CMakeFiles/ros-qualisys-release_changelog.dir/progress.make
 
 CMakeFiles/ros-qualisys-release_changelog:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zeb/bluerov2_pid/ros_qualysis/build/ros-qualisys/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Update CHANGELOG.md for ros-qualisys"
-	cd /home/zeb/bluerov2_pid/ros_qualysis/src && sed -i.back "s|##\ \[Unreleased\]|##\ [Unreleased]\n\n##\ [$$VERSION]\ -\ 2026-02-11|" CHANGELOG.md && sed -i.back "s|^\[Unreleased]:\ \(https://.*compare/\)\(v.*\)...HEAD|[Unreleased]:\ \1v$$VERSION...HEAD\n[$$VERSION]:\ \1\2...v$$VERSION|" CHANGELOG.md && if ! ( git diff --quiet CHANGELOG.md ) then ( /usr/bin/git add CHANGELOG.md && /usr/bin/git commit -m release:\ Update\ CHANGELOG.md\ for\ $$VERSION && echo Updated\ CHANGELOG.md\ and\ committed ) fi
+	cd /home/zeb/bluerov2_pid/ros_qualysis/src && sed -i.back "s|##\ \[Unreleased\]|##\ [Unreleased]\n\n##\ [$$VERSION]\ -\ 2026-03-06|" CHANGELOG.md && sed -i.back "s|^\[Unreleased]:\ \(https://.*compare/\)\(v.*\)...HEAD|[Unreleased]:\ \1v$$VERSION...HEAD\n[$$VERSION]:\ \1\2...v$$VERSION|" CHANGELOG.md && if ! ( git diff --quiet CHANGELOG.md ) then ( /usr/bin/git add CHANGELOG.md && /usr/bin/git commit -m release:\ Update\ CHANGELOG.md\ for\ $$VERSION && echo Updated\ CHANGELOG.md\ and\ committed ) fi
 
 ros-qualisys-release_changelog: CMakeFiles/ros-qualisys-release_changelog
 ros-qualisys-release_changelog: CMakeFiles/ros-qualisys-release_changelog.dir/build.make

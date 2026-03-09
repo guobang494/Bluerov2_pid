@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="guidance_law" type="guidance_law_node.py" name="guidance_law_node" output="screen">
+        <param name="config_file" value="$(find guidance_law)/configs/guidance_params.yaml"/>
+    </node>
+</launch>
+
