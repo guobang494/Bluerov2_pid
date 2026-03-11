@@ -4,7 +4,7 @@ This document describes how to set up **BlueROV2 with MAVROS, Qualisys, and PID 
 
 ---
 
-# 1. Install MAVROS
+# 1. Install MAVROS (If you use docker we provided then skip this)
 
 Install MAVROS and related packages.
 
@@ -39,14 +39,9 @@ Configure the **topside computer** with a static IP:
 IP Address: 192.168.2.1
 Subnet Mask: 255.255.255.0
 ```
+You can alos see the official instruction for Bluerov2 which the link is locatied in 
+https://bluerobotics.com/learn/bluerov2-software-setup-r3-and-older/#software-introduction
 
-BlueROV2 default IP:
-
-```
-192.168.2.2
-```
-
----
 
 # 3. Launch MAVROS
 
@@ -59,17 +54,6 @@ target_system_id:=1 \
 target_component_id:=1
 ```
 
-If MAVROS cannot connect and shows network errors, set the ROS IP:
-
-```bash
-export ROS_IP=192.168.0.170
-```
-
-You can add this to `.bashrc`:
-
-```bash
-echo "export ROS_IP=192.168.0.170" >> ~/.bashrc
-```
 
 If successful, MAVROS will start receiving **heartbeat messages**.
 
@@ -78,6 +62,10 @@ Check MAVROS state:
 ```bash
 rostopic echo /mavros/state
 ```
+You can see the status like this 
+
+
+
 
 ---
 
@@ -97,7 +85,7 @@ rosservice call /mavros/cmd/arming "value: true"
 
 ---
 
-# 5. Install Qualisys ROS Package
+# 5. Install Qualisys ROS Package (If you use docker we provided then skip this)
 
 Download the package into:
 
@@ -146,8 +134,9 @@ roslaunch ~/bluerov2_pid/ros_qualysis/src/launch/qualisys_bauzil_bringup.launch
 If necessary, modify the server IP address in:
 
 ```
-ros_qualysis/src/launch/qualisys_bauzil_bringup.launch
+Roslaunch ros_qualysis/src/launch/qualisys_bauzil_bringup.launch server_address:=xxx.xx.xx.x     server_base_port:=xxxxx
 ```
+If success ,if you will see 
 
 ---
 
@@ -161,28 +150,22 @@ python3 ~/bluerov2_pid/ros_qualysis/src/scripts/tf2_pose_gt_real.py
 
 This converts **Qualisys motion capture data** into **ROS pose data**.
 
----
-
-# 8. Launch QTM
-
-Run:
-
-```bash
-roslaunch ros-qualisys qualisys_bauzil_bringup.launch \
-server_address:=172.20.10.3 \
-server_base_port:=33333
-```
-
-Make sure the **IP address and port match both Windows and Ubuntu settings**.
-
-If successful, the rigid body should appear.
 
 ---
 
-# 9. Launch PID Controller
+# 8. Launch PID Controller
 
 ```bash
 roslaunch /home/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control/launch/bluerov2_motion_control.launch
+```
+
+# 9. Launch Guidance_law
+```bash
+roslaunch ~/bluerov2_pid/bluerov2_control/src/tank-setup/guidance_law/launch/guidance_law.launch
+```
+You can change the waypoint in the file 
+```bash
+~/bluerov2_pid/bluerov2_control/src/tank-setup/guidance_law/configs/guidance_params.yaml
 ```
 
 ---
@@ -190,61 +173,44 @@ roslaunch /home/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control/launch
 # 10. Publish PWM to BlueROV2
 
 ```bash
-roslaunch /home/bluerov2_pid/bluerov2_control/src/mavros_pub/launch/pwm_pub.launch
+roslaunch ~/bluerov2_pid/bluerov2_control/src/mavros_pub/launch/pwm_pub.launch
 ```
 
 ---
 
-# Full Workflow
+# Quick  Launch Workflow (Make sure you have seeting all parts)
 
-1. Configure network
 
-```
-IP: 192.168.2.1
-Subnet: 255.255.255.0
-```
 
-2. Launch MAVROS
 
+### 1. MAVROS Launch & Status
 ```bash
 roslaunch mavros apm.launch fcu_url:=udp://0.0.0.0:14550@192.168.2.2:14555
-```
-
-3. Check MAVROS state
-
-```bash
 rostopic echo /mavros/state
 ```
 
-4. Arm BlueROV2
-
+### 2. Arm / Disarm
 ```bash
+# Arm
 rosservice call /mavros/cmd/arming "value: true"
+# Disarm
+rosservice call /mavros/cmd/arming "value: false"
 ```
 
-5. Launch Qualisys
-
+### 3. Qualisys MoCap System
 ```bash
-roslaunch ros-qualisys qualisys_bauzil_bringup.launch
+roslaunch ~/bluerov2_pid/ros_qualysis/src/launch/qualisys_bauzil_bringup.launch
+python3 ~/bluerov2_pid/ros_qualysis/src/scripts/tf2_pose_gt_real.py
 ```
 
-6. Transform Qualisys data
-
+### 4. Control, Guidance & PWM
 ```bash
-python3 tf2_pose_gt_real.py
+roslaunch ~/bluerov2_pid/bluerov2_control/src/bluerov2_motion_control/launch/bluerov2_motion_control.launch
+roslaunch ~/bluerov2_pid/bluerov2_control/src/tank-setup/guidance_law/launch/guidance_law.launch
+roslaunch ~/bluerov2_pid/bluerov2_control/src/mavros_pub/launch/pwm_pub.launch
 ```
 
-7. Launch PID controller
 
-```bash
-roslaunch bluerov2_motion_control.launch
-```
-
-8. Publish PWM
-
-```bash
-roslaunch pwm_pub.launch
-```
 
 
 
